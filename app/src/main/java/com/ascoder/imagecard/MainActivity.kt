@@ -70,6 +70,10 @@ class MainActivity : ComponentActivity() {
         val painter = painterResource(id = R.drawable.eye)
         val description = "Eye of Human"
         val title = "Eye"
-        ComponentContainer(painter, description, title)
+        ComponentContainer(
+            painter = painter,
+            contentDescription = description,
+            title = title
+        )
     }
 }
