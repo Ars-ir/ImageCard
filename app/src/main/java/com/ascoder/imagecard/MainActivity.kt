@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
@@ -42,7 +43,10 @@ class MainActivity : ComponentActivity() {
                )
                Box(modifier = Modifier
                    .fillMaxSize()
-                   .padding(12.dp))
+                   .padding(12.dp),
+                   contentAlignment = Alignment.BottomStart) {
+
+               }
            }
        }
     }
