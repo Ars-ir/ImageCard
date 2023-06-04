@@ -3,7 +3,10 @@ package com.ascoder.imagecard
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material.Card
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
@@ -15,8 +18,15 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
-    fun ComponentContainer() {
-        
+    fun ComponentContainer(
+        painter: Painter,
+        contentDescription: String,
+        title: String,
+        modifier: Modifier = Modifier
+    ) {
+        Card {
+
+        }
     }
 
     @Preview(showBackground = true)
