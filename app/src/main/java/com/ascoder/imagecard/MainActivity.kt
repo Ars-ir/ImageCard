@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val painter = painterResource(id = R.drawable.images)
+            val painter = painterResource(id = R.drawable.elmo)
             val description = "Eye of Human"
             val title = "Eye"
             ComponentContainer(
@@ -67,7 +67,7 @@ class MainActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun ContainerPreview() {
-        val painter = painterResource(id = R.drawable.images)
+        val painter = painterResource(id = R.drawable.elmo)
         val description = "Eye of Human"
         val title = "Eye"
         ComponentContainer(
