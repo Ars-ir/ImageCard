@@ -25,9 +25,11 @@ class MainActivity : ComponentActivity() {
         title: String,
         modifier: Modifier = Modifier
     ) {
-        Card {
-            modifier = modifier.fillMaxWidth(),
-        }
+       Card(
+           modifier = modifier.fillMaxWidth(),
+       ) {
+
+       }
     }
 
     @Preview(showBackground = true)
