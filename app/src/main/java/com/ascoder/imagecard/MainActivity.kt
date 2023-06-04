@@ -27,11 +27,15 @@ class MainActivity : ComponentActivity() {
             val painter = painterResource(id = R.drawable.elmo)
             val description = "Eye of Human"
             val title = "Eye"
-            ComponentContainer(
-                painter = painter,
-                contentDescription = description,
-                title = title
-            )
+            Box(
+                modifier = Modifier.fillMaxWidth(0.5f)
+            ) {
+                ComponentContainer(
+                    painter = painter,
+                    contentDescription = description,
+                    title = title
+                )
+            }
         }
     }
 
@@ -70,10 +74,14 @@ class MainActivity : ComponentActivity() {
         val painter = painterResource(id = R.drawable.elmo)
         val description = "Eye of Human"
         val title = "Eye"
-        ComponentContainer(
-            painter = painter,
-            contentDescription = description,
-            title = title
-        )
+        Box(
+            modifier = Modifier.fillMaxWidth(0.5f)
+        ) {
+            ComponentContainer(
+                painter = painter,
+                contentDescription = description,
+                title = title
+            )
+        }
     }
 }
