@@ -14,14 +14,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val painter = painterResource(id = R.drawable.eye)
             ComponentContainer()
         }
     }
@@ -49,7 +52,7 @@ class MainActivity : ComponentActivity() {
                    .padding(12.dp),
                    contentAlignment = Alignment.BottomStart
                ) {
-                   Text(text = title, style = TextStyle(color = White))
+                   Text(text = title, style = TextStyle(color = White, fontSize = 16.sp))
                }
            }
        }
