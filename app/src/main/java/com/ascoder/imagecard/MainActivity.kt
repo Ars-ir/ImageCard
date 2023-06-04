@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
@@ -11,6 +12,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
@@ -59,6 +61,9 @@ class MainActivity : ComponentActivity() {
                    contentDescription = contentDescription,
                    contentScale = ContentScale.Crop
                )
+               Box(modifier = Modifier
+                   .fillMaxSize()
+                   .background(brush = Brush.verticalGradient()))
                Box(modifier = Modifier
                    .fillMaxSize()
                    .padding(12.dp),
