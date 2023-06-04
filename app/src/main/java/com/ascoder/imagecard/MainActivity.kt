@@ -25,7 +25,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val painter = painterResource(id = R.drawable.eye)
-            ComponentContainer()
+            val description = "Eye of Human"
+            val title = "Eye"
+            ComponentContainer(
+                painter = painter,
+                contentDescription = description,
+                title = title
+            )
         }
     }
 
@@ -61,6 +67,9 @@ class MainActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun ContainerPreview() {
-        ComponentContainer()
+        val painter = painterResource(id = R.drawable.eye)
+        val description = "Eye of Human"
+        val title = "Eye"
+        ComponentContainer(painter, description, title)
     }
 }
