@@ -28,7 +28,9 @@ class MainActivity : ComponentActivity() {
             val description = "Elmo smiling"
             val title = "Elmo"
             Box(
-                modifier = Modifier.fillMaxWidth(0.5f)
+                modifier = Modifier
+                    .fillMaxWidth(0.5f)
+                    .padding(16.dp)
             ) {
                 ComponentContainer(
                     painter = painter,
@@ -75,7 +77,9 @@ class MainActivity : ComponentActivity() {
         val description = "Elmo smiling"
         val title = "Elmo"
         Box(
-            modifier = Modifier.fillMaxWidth(0.5f)
+            modifier = Modifier
+                .fillMaxWidth(0.5f)
+                .padding(16.dp)
         ) {
             ComponentContainer(
                 painter = painter,
