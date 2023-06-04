@@ -29,7 +29,8 @@ class MainActivity : ComponentActivity() {
     ) {
        Card(
            modifier = modifier.fillMaxWidth(),
-           shape = RoundedCornerShape(15.dp)
+           shape = RoundedCornerShape(15.dp),
+           elevation =5.dp
        ) {
 
        }
