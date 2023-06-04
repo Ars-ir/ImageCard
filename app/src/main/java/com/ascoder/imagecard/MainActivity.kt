@@ -69,7 +69,8 @@ class MainActivity : ComponentActivity() {
                            colors = listOf(
                                Color.Transparent,
                                Color.Black
-                           )
+                           ),
+                           startY = 300f
                        )
                    )
                )
