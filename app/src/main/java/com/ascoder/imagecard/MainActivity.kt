@@ -3,6 +3,7 @@ package com.ascoder.imagecard
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.Card
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
         modifier: Modifier = Modifier
     ) {
         Card {
-
+            modifier = modifier.fillMaxWidth(),
         }
     }
 
