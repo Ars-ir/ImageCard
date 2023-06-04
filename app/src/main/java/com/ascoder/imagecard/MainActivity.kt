@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
@@ -63,7 +64,15 @@ class MainActivity : ComponentActivity() {
                )
                Box(modifier = Modifier
                    .fillMaxSize()
-                   .background(brush = Brush.verticalGradient()))
+                   .background(
+                       brush = Brush.verticalGradient(
+                           colors = listOf(
+                               Color.Transparent,
+                               Color.Black
+                           )
+                       )
+                   )
+               )
                Box(modifier = Modifier
                    .fillMaxSize()
                    .padding(12.dp),
