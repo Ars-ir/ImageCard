@@ -25,8 +25,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val painter = painterResource(id = R.drawable.elmo)
-            val description = "Eye of Human"
-            val title = "Eye"
+            val description = "Elmo smiling"
+            val title = "Elmo"
             Box(
                 modifier = Modifier.fillMaxWidth(0.5f)
             ) {
@@ -72,8 +72,8 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun ContainerPreview() {
         val painter = painterResource(id = R.drawable.elmo)
-        val description = "Eye of Human"
-        val title = "Eye"
+        val description = "Elmo smiling"
+        val title = "Elmo"
         Box(
             modifier = Modifier.fillMaxWidth(0.5f)
         ) {
