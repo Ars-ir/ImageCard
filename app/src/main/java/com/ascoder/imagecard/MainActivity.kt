@@ -3,6 +3,7 @@ package com.ascoder.imagecard
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -34,10 +35,11 @@ class MainActivity : ComponentActivity() {
            shape = RoundedCornerShape(15.dp),
            elevation = 5.dp
        ) {
-           Box(
-               modifier = Modifier.height(200.dp)
-           ) {
-
+           Box(modifier = Modifier.height(200.dp)) {
+               Image(
+                   painter = painter,
+                   contentDescription = contentDescription
+               )
            }
        }
     }
